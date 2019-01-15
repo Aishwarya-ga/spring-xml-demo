@@ -40,6 +40,12 @@
     <bean id="movie3" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg index="0" ref="actor3"></constructor-arg>
     </bean>
+
+    <!--this creates an UnsatisfiedDependencyException-->
+    <!--<bean id="movie3" class="com.stackroute.domain.Movie" scope="prototype" autowire="byType">-->
+        <!--&lt;!&ndash;<constructor-arg index="0" ref="actor3"></constructor-arg>&ndash;&gt;-->
+    <!--</bean>-->
+
     <bean id="actor3" class="com.stackroute.domain.Actor">
         <constructor-arg type="String" value="aishwarya"></constructor-arg>
         <constructor-arg type="String" value="female"></constructor-arg>
