@@ -42,5 +42,6 @@ public class Main {
         Actor actorB = movie3.getActor();
         System.out.println(actorA.getName()+" "+actorA.getAge()+" "+actorA.getGender());
 
+        ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
     }
 }
