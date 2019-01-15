@@ -59,6 +59,7 @@
         <constructor-arg type="int" value="22"></constructor-arg>
     </bean>
     <!--bean for BeanLifeCycleDemoBean-->
-    <bean id="BeanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
-    </bean>
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
+    <!--bean for BeanPostProcessor-->
+    <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
 </beans>
