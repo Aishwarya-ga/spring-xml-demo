@@ -1,3 +1,6 @@
+/*From the autowire-xml branch of spring-xml-demo repo create an aware-interfacebranch.
+*Implement ApplicationContextAware, BeanFactoryAware, BeanNameAware in the
+*Movie class and print out their results.*/
 package com.stackroute;
 
 import com.stackroute.domain.Actor;
