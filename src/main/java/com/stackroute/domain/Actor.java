@@ -9,7 +9,7 @@ public class Actor {
     private String name;
     private String gender;
     private int age;
-
+    //getter and setter methods
     public String getName() {
         return name;
     }
@@ -29,10 +29,7 @@ public class Actor {
     public int getAge() {
         return age;
     }
-
     public void setAge(int age) {
         this.age = age;
     }
-
-
 }

@@ -16,6 +16,4 @@
     <bean id="movie" class="com.stackroute.domain.Movie">
         <property name="actor" ref="actor"></property>
     </bean>
-
-
 </beans>
