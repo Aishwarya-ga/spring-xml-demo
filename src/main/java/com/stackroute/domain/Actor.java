@@ -1,6 +1,8 @@
 /*Actor has two String properties, name and gender, and an age property of type int.
 *An Actor can be initialized with the three properties via the corresponding setter methods. Use
 *property based injection in the bean definition file (beans.xml)
+* From the master branch of spring-xml-demo repo create a constructor-injection branch.
+*Add constructor to the Actor class to initialize with name and gender, and age
 */
 
 package com.stackroute.domain;
