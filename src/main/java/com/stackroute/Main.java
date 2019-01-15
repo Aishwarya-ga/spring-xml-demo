@@ -14,7 +14,6 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
     public static void main(String[] args){
-
         //Using ApplicationContext
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         Movie movie = (Movie) applicationContext.getBean("movie");
@@ -34,6 +33,7 @@ public class Main {
         System.out.println(actor3.getName()+" "+actor3.getAge()+" "+actor3.getGender());
 
         //System.out.println(movie2==movie3);
+
         Movie movieA = (Movie) applicationContext.getBean("movieA");
         Actor actorA = movie3.getActor();
         System.out.println(actorA.getName()+" "+actorA.getAge()+" "+actorA.getGender());
