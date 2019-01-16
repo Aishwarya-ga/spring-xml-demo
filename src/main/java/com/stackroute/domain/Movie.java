@@ -21,18 +21,4 @@ public class Movie {
     public Actor getActor() {
         return actor;
     }
-    //implementing method in ApplicationContextAware
-//    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-//        Movie movie = (Movie) applicationContext.getBean("movie");
-//        System.out.println("From application context: "+movie.getActor().getName()+" "+movie.getActor().getGender()+" "+movie.getActor().getAge());
-//    }
-//    //implementing method in BeanNameAware
-//    public void setBeanName(String beanName){
-//        System.out.println("Bean name: "+" "+ beanName);
-//    }
-//    //implementing method in BeanFactoryAware
-//    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-//        Movie movie = (Movie) beanFactory.getBean("movie");
-//        System.out.println("From beanFactory: " + movie.getActor().getName() + " " + movie.getActor().getAge() + " " + movie.getActor().getGender());
-//    }
 }
