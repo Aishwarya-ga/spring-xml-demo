@@ -35,12 +35,12 @@ public class Main {
         //System.out.println(movie2==movie3);
 
         Movie movieA = (Movie) applicationContext.getBean("movieA");
-        Actor actorA = movie3.getActor();
+        Actor actorA = movieA.getActor();
         System.out.println(actorA.getName()+" "+actorA.getAge()+" "+actorA.getGender());
 
         Movie movieB = (Movie) applicationContext.getBean("movieB");
-        Actor actorB = movie3.getActor();
-        System.out.println(actorA.getName()+" "+actorA.getAge()+" "+actorA.getGender());
+        Actor actorB = movieB.getActor();
+        System.out.println(actorB.getName()+" "+actorB.getAge()+" "+actorB.getGender());
         //register shutdownhook so that after main the object gets destroyed
         ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
 
