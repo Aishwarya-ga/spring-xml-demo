@@ -20,7 +20,7 @@
 
     <!--creating 3 beans of actor (construction based injection)-->
     <bean id="movie1" class="com.stackroute.domain.Movie">
-        <constructor-arg name="actor" ref="actor1"></constructor-arg>
+        <constructor-arg  ref="actor1"></constructor-arg>
     </bean>
     <bean id="actor1" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="aishwarya"></constructor-arg>
@@ -29,7 +29,7 @@
     </bean>
 
     <bean id="movie2" class="com.stackroute.domain.Movie">
-        <constructor-arg index="0" ref="actor2"></constructor-arg>
+        <constructor-arg ref="actor2"></constructor-arg>
     </bean>
     <bean id="actor2" class="com.stackroute.domain.Actor">
         <constructor-arg index="0" value="aishwarya"></constructor-arg>
@@ -38,7 +38,7 @@
     </bean>
 
     <bean id="movie3" class="com.stackroute.domain.Movie" scope="prototype">
-        <constructor-arg index="0" ref="actor3"></constructor-arg>
+        <constructor-arg ref="actor3"></constructor-arg>
     </bean>
     <bean id="actor3" class="com.stackroute.domain.Actor">
         <constructor-arg type="String" value="aishwarya"></constructor-arg>
@@ -47,7 +47,7 @@
     </bean>
 
     <bean name="movieA,movieB" class="com.stackroute.domain.Movie" scope="prototype">
-        <constructor-arg index="0" ref="actorAB"></constructor-arg>
+        <constructor-arg ref="actorAB"></constructor-arg>
     </bean>
     <bean id="actorAB" class="com.stackroute.domain.Actor">
         <constructor-arg type="String" value="aishwarya"></constructor-arg>
