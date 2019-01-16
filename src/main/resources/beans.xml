@@ -15,9 +15,6 @@
         <constructor-arg name="gender" value="female"></constructor-arg>
         <constructor-arg name="age" value="22"></constructor-arg>
     </bean>
-
-
-
     <!--creating 3 beans of actor (construction based injection)-->
     <bean id="movie1" class="com.stackroute.domain.Movie">
         <constructor-arg  ref="actor1"></constructor-arg>
@@ -54,6 +51,4 @@
         <constructor-arg type="String" value="female"></constructor-arg>
         <constructor-arg type="int" value="22"></constructor-arg>
     </bean>
-
-
 </beans>
