@@ -41,7 +41,8 @@ public class Main {
         Movie movieB = (Movie) applicationContext.getBean("movieB");
         Actor actorB = movie3.getActor();
         System.out.println(actorA.getName()+" "+actorA.getAge()+" "+actorA.getGender());
-
+        //register shutdownhook so that after main the object gets destroyed
         ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
+
     }
 }
