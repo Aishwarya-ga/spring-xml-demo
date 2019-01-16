@@ -42,14 +42,5 @@ public class Main {
         Actor actor3 = movie3.getActor();
         System.out.println(actor3.getName()+" "+actor3.getAge()+" "+actor3.getGender());
 
-        //System.out.println(movie2==movie3);
-        Movie movieA = (Movie) applicationContext.getBean("movieA");
-        Actor actorA = movie3.getActor();
-        System.out.println(actorA.getName()+" "+actorA.getAge()+" "+actorA.getGender());
-
-        Movie movieB = (Movie) applicationContext.getBean("movieB");
-        Actor actorB = movie3.getActor();
-        System.out.println(actorA.getName()+" "+actorA.getAge()+" "+actorA.getGender());
-
     }
 }
